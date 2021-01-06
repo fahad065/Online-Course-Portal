@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Autus-A Learning Source</title>
+         <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    </head>
+    <body class="bg3">
+        <header1 >
+
+            <div class="course-section">
+                <div class="logo">
+                    <a href="/index">
+                    <img src="{% static 'autus.jpg' %}">
+                    </a>
+                </div>
+                 <ul>
+                     <li><a href="/index">Home</a></li>
+                     <li><a href="/about">About US</a></li>
+                     <li><a href="/contact">Contact Us</a></li>
+                     <li><a href="/accounts/register">Register</a></li>
+                 </ul>
+            </div>
+        </header1>
+
+        <!--SHOWCASE-->
+        <showcase>
+            <br><br><br><br><br><br><br>
+            <h1>POPULAR COURSES WE OFFER:</h1><br><br><br>
+            <div id="courses">
+                 <div class="ds">
+                     <h3>Data Science</h3><br><br>
+                     <img src="{% static 'ds.jpg' %}" width="50%" alt="ds">
+                     <p>Data science is a multi-disciplinary field that uses scientific methods, processes, algorithms and systems to extract knowledge and insights from structured and unstructured data. Data science is related to data mining and big data.</p>
+                     <a href="/accounts/register"><button class="apply">Apply Here</button></a>
+                 </div>
+                 <div class="fs">
+                     <h3>Full Stack Development</h3><br><br>
+                     <img src="{% static 'fullstack.jpg' %}" alt="fs">
+                     <p>A Full Stack Developer is responsible for the coding, design and layout of a website according to a company's specifications. As the role takes into consideration user experience and function, a certain level of both graphic design and computer programming is necessary.</p>
+                     <a href="/accounts/register"><button class="apply">Apply Here</button></a>
+                 </div>
+ 
+                 <div class="networking">
+                    <h3>Networking</h3><br><br>
+                    <img src="{% static 'networking.png' %}" alt="networking">
+                    <p>Networking is the exchange of information and ideas among people with a common profession or special interest, usually in an informal social setting. ... (The term computer networking refers to linking multiple devices so that they can readily share information and software resources.)</p>
+                    <a href="/accounts/register"><button class="apply">Apply Here</button></a>
+                </div>
+
+                <div class="ai">
+                    <h3>Artificial Intelligence</h3><br><br>
+                    <img src="{% static 'AI.jpg' %}" alt="ai">
+                    <p>In computer science, artificial intelligence, sometimes called machine intelligence, is intelligence demonstrated by machines, in contrast to the natural intelligence displayed by humans.</p>
+                    <a href="/accounts/register"><button class="apply">Apply Here</button></a>
+                </div>
+
+                <div class="ml">
+                    <h3>Machine Learning</h3><br><br>
+                    <img src="{% static 'machine.jpg' %}" alt="ml">
+                    <p>Machine learning is the scientific study of algorithms and statistical models that computer systems use to perform a specific task without using explicit instructions, relying on patterns and inference instead. It is seen as a subset of artificial intelligence.</p>
+                    <a href="/accounts/register"><button class="apply">Apply Here</button></a>
+                </div>
+            </div>
+        </showcase>
+<!--End Of Showcase-->
+
+<footer class="primary-footer">
+    &copy; Autus&nbsp;9001:2001 Certified<br>
+    <nav class="nav">
+        <a href="/index" class="btn1">Home</a>
+        <a href="/about" class="btn1">About Us</a>
+        <a href="/contact" class="btn1">Contact Us</a>
+    </nav>
+</footer>
+    </body>
+</html>

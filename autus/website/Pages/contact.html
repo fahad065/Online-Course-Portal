@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+
+        <title>Autus-A Learning Source</title>
+         <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body class="bg">
+        <header1>
+            <div class="main">
+                <div class="logo">
+                    <a href="/index">
+                    <img src="{% static 'autus.jpg' %}">
+                    </a>
+                </div>
+                 <ul>
+                     <li><a href="/index">Home</a></li>
+                     <li><a href="/about">About US</a></li>
+                     <li><a href="/contact">Contact Us</a></li>
+                     <li><a href="/accounts/register">Register</a></li>
+                 </ul>
+            </div>
+
+<br><br><br><br>
+         <div class="contact-section">
+             <h1>Contact US</h1>
+             <div class="border"></div>
+               <form class="contact-form" action="/index" method="POST">
+               <input type="text" class="contact-form-text" placeholder="Your name" required>
+               <input type="email" class="contact-form-text" placeholder="Your email"required>
+               <input type="text" class="contact-form-text" placeholder="Your phone" required>
+               <textarea class="contact-form-text" placeholder="Your Message"></textarea>
+               <input type="submit" class="contact-form-btn" value="Send">
+             </form>
+         </div>
+           </header1>
+
+        
+         <footer class="primary-footer">
+            &copy; Autus&nbsp;9001:2001 Certified<br>
+            <nav class="nav">
+                <a href="/index" class="btn1">Home</a>
+                <a href="/about" class="btn1">About Us</a>
+                <a href="/contact" class="btn1">Contact Us</a>
+            </nav>
+        </footer>
+
+    </body>
+</html>    

@@ -1,0 +1,111 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Autus-A Learning Source</title>
+         <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    </head>
+    <body>
+        <header1>
+            <div class="main1">
+                <div class="logo">
+                    <a href="/index">
+                    <img src="{% static 'autus.jpg'%}">
+                    </a>
+                </div>
+                 <ul>
+                     <li><a href="/index">Home</a></li>
+                     <li><a href="/about">About US</a></li>
+                     <li><a href="/contact">Contact Us</a></li>
+                     <li><a href="/accounts/register">Register</a></li>
+                 </ul>
+            </div>
+        </header1>
+
+
+        <section class="row">
+            <div class="grid">
+
+                <!-- Registration details-->
+                <section class="col-2-3">
+                    <h1>Register Now!</h1>
+                    <h3>Please Fill The Form To Register</h3>
+                    
+                </section><!--
+                --><form class="col-1-3, register-form"  method="post" action="/accounts/submit">
+                    {% csrf_token %}
+                    <table>
+
+                           <tr>
+                               <td>
+                                   Name:
+                               </td>
+                               <td>
+                                   <input type="text" placeholder="Name" name="name" required>
+                               </td>
+                           </tr>
+                           <tr>
+                               <td>
+                                   Password:
+                               </td>
+                               <td>
+                                   <input type="password" placeholder="Password" name="password" required>
+                               </td>
+                           </tr>
+                           <tr>
+                               <td>
+                                   Gender:
+                               </td>
+                               <td>
+                                <input type="text" placeholder="Gender" name="gender" required>
+                                </td>
+                           </tr>
+                           <tr>
+                               <td>
+                                   Email:
+                               </td>
+                               <td>
+                                   <input type="mail" placeholder="Email" name="email" required>
+                               </td>
+                           </tr>
+                            <tr>
+                                <td>
+                                    Courses:
+                                </td>
+                                <td>
+                                    <input type="text" placeholder="courses" name="courses" required>
+                                    DS = Data Science
+                                    FSD = Full Stack Development
+                                    NW = Networking
+                                    AI = Artificial Intelligence
+                                    ML = Machine Learning
+                                </td>        
+                            </tr>
+                            <tr>
+                               <td>
+                                   Phone no :
+                               </td>
+                               <td>
+                                   <input type="text" placeholder="98480*****" name="phone" required>
+                               </td>
+                           </tr>
+                           
+                        </table>
+                        <input type="Submit" value="Submit"><br>
+                </form>               
+</section>
+            </div>
+                </div>
+                   
+            
+    
+        <footer class="primary-footer">
+            &copy; Autus&nbsp;9001:2001 Certified<br>
+            <nav class="nav">
+                <a href="/index" class="btn1">Home</a>
+                <a href="/about" class="btn1">About Us</a>
+                <a href="/contact" class="btn1">Contact Us</a>
+            </nav>
+        </footer>
+  </body>
+</html>
